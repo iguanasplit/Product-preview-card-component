@@ -1,1 +1,260 @@
+@import url(href=https://fonts.googleapis.com/css?family=Montserrat:700,500|Fraunces:700);
 
+
+
+* {
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+
+
+.image1 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+
+
+
+  .image2 {
+    display: none;
+  }
+
+  .image1 {
+    display: block;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  .card {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+
+
+html {
+
+  background:
+    hsl(30, 38%, 92%);
+  /*hsl(220, 15%, 55%); */
+
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+main {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.card {
+
+  background:
+    rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 5px hsla(228, 20%, 76%, 0.108);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  height: 525px;
+
+
+
+
+
+
+
+}
+
+
+img {
+
+  width: 100%;
+  min-width: 5%;
+  height: 100%;
+  object-fit: cover;
+  display: inline;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+
+.text {
+  width: 65%;
+  height: auto;
+  display: flex;
+  display: inline-block;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: wrap;
+  overflow: hidden;
+
+  margin-right: 40px;
+  margin-left: 30px;
+
+
+}
+
+#perfume {
+  letter-spacing: 5px;
+}
+
+#discount {
+
+  text-decoration: line-through;
+}
+
+
+
+
+#button {
+
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: row;
+
+  text-align: center;
+
+  margin-top: 25px;
+
+  padding-bottom: 10px;
+
+
+  margin-bottom: 25px;
+}
+
+.insidebtn {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: row;
+
+
+}
+
+
+
+
+#button:hover {
+  background-color: hsl(212, 21%, 14%);
+
+}
+
+p.buttontext {
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+#carticon {
+  margin-top: 10px;
+}
+
+.prices {
+
+  display: flex;
+  width: 90%;
+  align-items: center;
+  line-height: 0px;
+
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+h1 {
+
+  font-family: "Fraunces", serif;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 40px;
+  color: hsl(212, 21%, 14%);
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+h2 {
+
+  font-family: "Fraunces", serif;
+  margin-top: 35px;
+
+  margin-bottom: 35px;
+  color: hsl(158, 36%, 37%);
+  font-size: 40px;
+  font-weight: 700;
+  /*-webkit-text-stroke: 0.1px hsl(218, 44%, 22%); */
+}
+
+h3 {
+
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+  font-weight: 400;
+
+
+  /*-webkit-text-stroke: 0.1px hsl(218, 44%, 22%); */
+}
+
+p {
+
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+
+  /* */
+
+}
+
+
+a {
+  text-decoration: none;
+}
