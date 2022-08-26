@@ -4,43 +4,9 @@
 
 * {
   font-family: "Montserrat", sans-serif;
-
-
+  
+  
 }
-
-
-
-
-.image1 {
-  display: none;
-}
-
-@media (min-width: 600px) {
-
-
-
-  .image2 {
-    display: none;
-  }
-
-  .image1 {
-    display: block;
-  }
-
-
-}
-
-@media (max-width: 600px) {
-
-  .card {
-
-    display: flex;
-    flex-direction: column;
-  }
-
-
-}
-
 
 
 html {
@@ -48,100 +14,120 @@ html {
   background:
     hsl(30, 38%, 92%);
   /*hsl(220, 15%, 55%); */
-
-
-  height: 100%;
+  
   display: flex;
+
+ 
   align-items: center;
   justify-content: center;
 
-}
-
-
-main {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
-
-
-.card {
-
-  background:
-    rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 2px 5px 5px hsla(228, 20%, 76%, 0.108);
-
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 60%;
-  height: 525px;
-
-
-
-
-
-
-
-}
-
-
-img {
-
+.IMGMobile{
+  margin: 0;
+  padding: 0;
+  display: block;
   width: 100%;
-  min-width: 5%;
-  height: 100%;
-  object-fit: cover;
-  display: inline;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
 }
 
+/*MOBILE media_________________________________________________________*/
+
+.IMGDesktop {
+  display: none;
+}
+
+
+/*MOBILE format_________________________________________________________*/
+
+.card{
+
+  
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+  background:
+  rgb(255, 255, 255);
+  width: 50vh;
+  height: auto;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 5px 10px 10px rgba(167, 143, 138, 0.184);
+
+}
 
 .text {
-  width: 65%;
-  height: auto;
-  display: flex;
-  display: inline-block;
-  align-items: flex-start;
-  text-align: left;
-  flex-wrap: wrap;
 
-  text-overflow: ellipsis;
+  margin:30px;
 
-  /* Required for text-overflow to do anything */
-  white-space: wrap;
-  overflow: hidden;
+}
+ /*DESKTOP______________________________________________________________________________*/
 
-  margin-right: 40px;
-  margin-left: 30px;
+@media (min-width: 1000px) {
 
+ 
+ 
+
+  .IMGMobile {
+    display: none;
+  }
+
+  .card{
+
+    
+    display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: row;
+  background:
+  rgb(255, 255, 255);
+  width: 75vh;
+  height: 55vh;
+
+  border-radius: 15px;
+  
+  }
+
+  .IMGDesktop {
+    height: 100%;
+    width:auto;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+        display: block;
+  }
+
+  
+  
+  .text {
+  
+    margin:15px;
+  
+  }
 
 }
 
-#perfume {
-  letter-spacing: 5px;
-}
-
-#discount {
-
-  text-decoration: line-through;
-}
-
-
-
-
+/*BUTTON_______________________________________________________*/
 #button {
 
   border-radius: 10px;
   background-color: hsl(158, 36%, 37%);
-
+  
   width: 100%;
 
   display: flex;
@@ -154,12 +140,13 @@ img {
 
   text-align: center;
 
-  margin-top: 25px;
+  margin-top: 13px;
 
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 
+  padding-top: 5px;
 
-  margin-bottom: 25px;
+  
 }
 
 .insidebtn {
@@ -176,15 +163,13 @@ img {
 }
 
 
-
-
 #button:hover {
   background-color: hsl(212, 21%, 14%);
 
 }
 
 p.buttontext {
-
+ 
   margin-top: 10px;
   margin-bottom: 0px;
   padding-left: 10px;
@@ -202,30 +187,35 @@ p.buttontext {
   display: flex;
   width: 90%;
   align-items: center;
-  line-height: 0px;
-
+  
+   margin-top:0px;
   justify-content: space-evenly;
   flex-direction: row;
 }
 
+
+
+/*FONTS_______________________________________________________*/
+
 h1 {
 
   font-family: "Fraunces", serif;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  line-height: 40px;
+ 
+  
   color: hsl(212, 21%, 14%);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
+margin-bottom: 5px;
+margin-top: 5px;
+
 
 }
 
 h2 {
 
   font-family: "Fraunces", serif;
-  margin-top: 35px;
-
-  margin-bottom: 35px;
+  margin-top:5px;
+  margin-bottom: 1px;
   color: hsl(158, 36%, 37%);
   font-size: 40px;
   font-weight: 700;
@@ -235,7 +225,7 @@ h2 {
 h3 {
 
   color: hsl(228, 12%, 48%);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 
 
@@ -245,15 +235,21 @@ h3 {
 p {
 
   color: hsl(228, 12%, 48%);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 28px;
-
-
-  /* */
-
+  line-height: 155%;
+  margin-bottom:5px;
+  margin-top: 2px;
 }
 
+#discount {
+  text-decoration: line-through;
+}
+
+#perfume {
+
+  letter-spacing: 8px;
+}
 
 a {
   text-decoration: none;
